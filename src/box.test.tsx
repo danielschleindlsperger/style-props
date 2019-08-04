@@ -15,6 +15,6 @@ describe('<Box />', () => {
   })
 
   it('style prop', () => {
-    console.log(renderToString(<Box p={2} />))
+    console.log(renderToString(<Box p={4} />))
   })
 })

@@ -16,9 +16,8 @@ const withSpacingProps = ({ p, px, py }: SpaceProps) => {
 }
 
 type BoxProps<As extends keyof React.ReactHTML> = JSX.IntrinsicElements[As] & {
-  p?: 2 | 4 | 8 | 12
   as?: As
-}
+} & SpaceProps
 
 export function Box<ElementType extends keyof React.ReactHTML | undefined>(
   props: BoxProps<ElementType extends undefined ? 'div' : ElementType>,
