@@ -7,7 +7,7 @@ describe('<Box />', () => {
     console.log(renderToString(<div onSubmit={() => alert('blub')} />))
     // console.log(renderToString(<Box onSubmit={() => alert('blub')} />))
     console.log(renderToString(<Box as="time" dateTime={'blub'} />))
-    console.log(renderToString(<Box as="a" href="/blub" />))
+    console.log(renderToString(<Box href="/blub" />))
   })
 
   it('input element', () => {
